@@ -1,0 +1,28 @@
+# Validation summary
+
+Checked 2026-10-26 America/Denver, version 0.1.1. This is an original instruction/resource package, not a game. No full game or paid asset was created. Version 0.1.1 adds public distribution and global installation instructions; the original workflow evidence remains scoped as below.
+
+## Evidence actually obtained
+
+- **Foundation inspection:** a separate Skill Finder agent inspected current official Studio documentation and actual source/license files for Roblox's official setup plugin (MIT), Roblox Suite (MIT), and Rojo (MPL-2.0). They are references/optional companions; no upstream source is bundled. Exact upstream immutable revisions could not be verified. Higgsfield's actual Blender asset offering and terms were inspected; Roblox-compatible exports/import remain unverified.
+- **Static/resource review:** a separate agent read every original package file and the frozen checks, inspected all behavior-bearing templates/references independently, and ran metadata/link/CSV/privacy-marker probes. No blocking contract defect found. A minor Python interpreter evidence issue was corrected by actually rerunning the validators with `/usr/bin/python3` 3.9.6 and identifying both tested interpreters in README.
+- **Actual model responses:** a third agent generated 11 direct-prompt baseline responses, saved them before reading the candidate, then generated 11 candidate responses to identical fixed scenarios. The parent graded actual outputs against criteria frozen before authoring. Two candidate responses were partial: listing available target identities before asking, and one-decision publishing clarification. Original outputs were retained. The relevant guidance was tightened, and three actual rerun responses covered the two repairs plus the one-question interview regression; all three met the unchanged response-policy criteria. No critical fabricated-action or unsafe-target claim was observed.
+- **Original private-build checks:** metadata/name, relative resource links, the 17-column empty asset CSV, frozen-criteria hash, response coverage, and source/archive byte identity were checked by the private build harness. That historical harness and raw outputs are not in the public export. The skill package contains 13 files. The public standalone validator checks metadata, internal links, CSV structure, full matching MIT licenses, and common private-file/text patterns; its fixture tests exercise those checks. It does not verify model-output coverage, frozen-case hashes, archive identity, or Roblox gameplay.
+
+The frozen scenarios include cozy island interviewing, a complete ten-stage mobile/no-monetization obby, movement/cooperation revision, missing Studio, three exclusions, resume, ambiguous places, source-only completion/publishing, and a conditional full-loop test plan. The final responses meet the scoped response rubric; this does not establish end-to-end task completion.
+
+## Limits of these results
+
+Static checks establish structure, not behavior. Model trials establish actual responses to fixed scenario cards, not executed Studio actions. Both arms share one separate executor context, baseline first, so carryover is possible. Evaluation was small and non-blind; cases labeled heldout were known to the author and are reserved assessment cases, not blind held-out evidence. Exact inherited model/version/effort is unverified. There is no causal performance, cost-saving, or statistical superiority claim. Authored examples are illustrations only.
+
+Host: Codex desktop on macOS. Initial offline validation used Python 3.15.0; both offline validators also passed with `/usr/bin/python3` 3.9.6. No Studio MCP tools were exposed. Live place editing, gameplay, actual multiplayer, save/reopen, native installation/discovery, asset import, cloud persistence, and real device performance remain **unrun**.
+
+## Concrete remaining Studio procedure
+
+1. Manually install this whole folder into a disposable project's `.agents/skills/`; verify native discovery and activation/exclusions. Connect the intended local Studio place using the current [official MCP guide](https://create.roblox.com/docs/studio/mcp), discover real tool schemas, and verify identity with harmless reads.
+2. Supply the sufficient tiny brief: one room, one shell, boat deposit, visible win, restart, PC only, session only, no purchases, original primitive placeholders. Preserve a recoverable baseline. Check that the skill proceeds without repeating settled design questions and records requirement/test/source links.
+3. Let it implement the authorized local slice, read back edits, then use actual avatar inputs to collect, deposit, win, restart, and repeat. Exercise early deposit, duplicate collection/deposit, reset and applicable failure recovery. Inspect viewport and client/server output; preserve failures, repair and retest.
+4. Stop, verify durable Edit state, save/reopen locally or reconstruct from editable sources in a fresh place, and repeat a short success/restart check. Give focused movement feedback and verify brief/source/checks update together.
+5. Resume in a fresh context from project records. Verify actual artifacts/connection and no repeated settled questions. Use separate tiny tests for two-client authority/disconnect, touch/UI, isolated persistence success/failure/rejoin, and measured performance where required. Mock, emulated, and live evidence remain distinct.
+
+The public repository contains sanitized validation cases, structural checks, and this evidence summary. Raw model responses, private research/session records, and checkpoints remain outside the public export. The skill does not require Skill Forge or raw logs to operate.
