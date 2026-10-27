@@ -1,6 +1,6 @@
 # Disposable one-shell test
 
-Status: **source prepared; live execution not yet established**. This is a tiny original fixture for validating Game Forge's Studio workflow, not a complete game. PC keyboard/mouse, session-only state, one player, original primitive placeholders; no purchases, persistence, external assets or game publication.
+Status: **live playtested; clean-baseline reconstruction verified**, 2026-10-27 on macOS Studio 0.745.0.7451137. This is a tiny original fixture for validating Game Forge's Studio workflow, not a complete game. PC keyboard/mouse, session-only state, one player, original primitive placeholders; no purchases, persistence, external assets or game publication. See [actual results and limits](game-forge/playtests.md).
 
 ## Preconditions and setup
 
@@ -19,7 +19,7 @@ Execute [setup.luau](setup.luau) in that target's **Edit** context through an av
 | T-05 | Interact with boat again | Award remains 1; duplicate deposit rejected |
 | T-06 | Press R or click Restart, then complete another normal loop | Shell/UI reset; no stuck state; exactly one award in the new round |
 | T-07 | Collect, then use the normal avatar reset/death path | Round resets on respawn, shell visible, normal loop can complete |
-| T-08 | Stop; verify persistent Edit model. Save/reopen or reconstruct in a fresh blank place | Repeated short input-driven success/restart passes on durable/reconstructed source |
+| T-08 | Stop; verify persistent Edit model. Save/reopen or reconstruct in a fresh blank place | Repeated short input-driven success/restart passes on durable/reconstructed source; this run verified restored-baseline reconstruction in the same instance, while a distinct new place and saved-file reopen remain unrun |
 
 Use actual player inputs. Direct attribute edits, internal reward calls, or teleporting past the loop are supplementary diagnostics and do not pass traversal/control tests. Record actual tool calls, target identity, build revision, input sequence, client/server output and inspected screenshots, expected versus observed results, failures, fixes and reruns. Mark unrun checks unrun.
 

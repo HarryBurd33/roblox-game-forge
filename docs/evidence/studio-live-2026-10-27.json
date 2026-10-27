@@ -1,0 +1,740 @@
+{
+  "date": "2026-10-27",
+  "evidence_type": "actual-live-Studio",
+  "host": "Codex desktop on macOS; official StudioMCP stdio through local test client",
+  "engine": {
+    "placeName": "Place1",
+    "running": false,
+    "engineVersion": "0.745.0.7451137",
+    "placeId": 0
+  },
+  "fixture_builder_sha256": "efc2caae3a305fcc7726d22cdf2237130bf3bf53b77fb1170742fd9a968c1d0b",
+  "final_edit_script_sha256": {
+    "server": "e500868e29a7c4c74e259e0419e9500463b1fd617aec6c81a17370786ba7b575",
+    "client": "4b53153db5075f9add9fa0ec17835f304543b3a8af6b6bc99df47e5bd3cc890e"
+  },
+  "final_edit_source_matches_builder": true,
+  "clean_baseline_reconstruction": "Only four verified fixture additions removed; original Camera/Baseplate/Terrain/SpawnLocation retained; final builder reexecuted in same Studio instance. Different new place and saved-file reopen unrun.",
+  "observations": [
+    {
+      "id": "23-early-observe",
+      "result": {
+        "last": "RejectedEarlyDeposit",
+        "awards": 0,
+        "position": "9.421875, 3.46875, 4.4609375",
+        "won": false,
+        "collected": false
+      },
+      "raw_result_sha256": "513b0adbc053b433f81ca90188ad0ecfdc04b04ba8b997a1ff087e8c47245993"
+    },
+    {
+      "id": "26-collect-observe",
+      "result": {
+        "hud": "Carry the shell to the green boat; press E.",
+        "shellTransparency": 1,
+        "won": false,
+        "collected": true,
+        "last": "Collected"
+      },
+      "raw_result_sha256": "08f5df23cc6eda7197508f4158fb2747b53e6d7bf8e001b650f6cd4ba5aa55ed"
+    },
+    {
+      "id": "30-win-observe",
+      "result": {
+        "collected": true,
+        "last": "Won",
+        "awards": 1,
+        "won": true
+      },
+      "raw_result_sha256": "914f68a4368dc96540961db988b154759267a2bc4e7a16082f01473c72dd9391"
+    },
+    {
+      "id": "33-duplicate-observe",
+      "result": {
+        "last": "RejectedDuplicateDeposit",
+        "awards": 1,
+        "won": true
+      },
+      "raw_result_sha256": "0a84e45ad266081780d4c4f28680e334c252a1ef78442ea28e84ca78dd2ed430"
+    },
+    {
+      "id": "34-hud-check",
+      "result": {
+        "bounds": "454, 33",
+        "fits": false,
+        "text": "You win! Restart and complete the loop again.",
+        "size": "500, 65"
+      },
+      "raw_result_sha256": "4ca3071ea7fdc0af8df36bed7a0e07c9d62914d4425f831d696afdc0f75794f2"
+    },
+    {
+      "id": "35-hud-fit-experiment",
+      "result": {
+        "bounds": "454, 66",
+        "text": "You win! Restart and complete the loop again.",
+        "fits": true,
+        "size": "500, 100"
+      },
+      "raw_result_sha256": "336ea58c8a374841868ebb720ed4e5b854929fc7e91493f41d2715d7651b2d44"
+    },
+    {
+      "id": "38-restart-observe",
+      "result": {
+        "hud": "Find the gold shell; press E to collect.",
+        "shellVisible": true,
+        "hudFits": true,
+        "awards": 0,
+        "won": false,
+        "collected": false,
+        "last": "Restarted"
+      },
+      "raw_result_sha256": "77780f2894d73dad30d9c5881444f98b71b4a0e8c627c5ae14be7544da989902"
+    },
+    {
+      "id": "41-carry-fits",
+      "result": {
+        "last": "Collected",
+        "shellVisible": false,
+        "hudFits": true,
+        "won": false,
+        "awards": 0,
+        "collected": true
+      },
+      "raw_result_sha256": "392f5fdbc959944b94642419b0bcda42171761de2d46a7ce5ffdc0aa5984d926"
+    },
+    {
+      "id": "44-second-win",
+      "result": {
+        "collected": true,
+        "last": "Won",
+        "awards": 1,
+        "won": true
+      },
+      "raw_result_sha256": "914f68a4368dc96540961db988b154759267a2bc4e7a16082f01473c72dd9391"
+    },
+    {
+      "id": "46-button-reset-observe",
+      "result": {
+        "last": "Restarted",
+        "shellVisible": true,
+        "hudFits": true,
+        "won": false,
+        "awards": 0,
+        "collected": false
+      },
+      "raw_result_sha256": "49bebda6acb9d7ee590b8c6e38b1f55eee5a3d7d2c0e70a8aff757ec6c58609c"
+    },
+    {
+      "id": "49-recovery-before",
+      "result": {
+        "collected": true,
+        "character": "1_1078322",
+        "health": 100,
+        "awards": 0
+      },
+      "raw_result_sha256": "ead1180d64db0b96ffabe8aa74ad93f450dba89acdc0832ae159a3c1e59c92f6"
+    },
+    {
+      "id": "52-menu-inspection",
+      "result": {
+        "menuOpen": true,
+        "buttons": []
+      },
+      "raw_result_sha256": "2a27281962282787d74b1c4c6351a1b52507ded9212f12b9492bc503c2401533"
+    },
+    {
+      "id": "54-recovery-after",
+      "result": {
+        "collected": false,
+        "character": "1_1241802",
+        "health": 100,
+        "awards": 0,
+        "shellVisible": true,
+        "won": false,
+        "menuOpen": false,
+        "last": "Restarted"
+      },
+      "raw_result_sha256": "e59ae7565a4d8301ad2678777ddecb4a9d58d9b53571eeb33e8bcf56ef6be6d8"
+    },
+    {
+      "id": "59-recovery-win",
+      "result": {
+        "won": true,
+        "hud": "You win! Restart and complete the loop again.",
+        "awards": 1,
+        "hudFits": true
+      },
+      "raw_result_sha256": "4efab4d765d7dbbe0072489a5783f45d26f1975944e03f89aa895f04912a9947"
+    },
+    {
+      "id": "63-restore-owned-baseline",
+      "result": {
+        "children": {
+          "1": {
+            "name": "Camera",
+            "class": "Camera"
+          },
+          "4": {
+            "name": "SpawnLocation",
+            "class": "SpawnLocation"
+          },
+          "3": {
+            "name": "Terrain",
+            "class": "Terrain"
+          },
+          "2": {
+            "name": "Baseplate",
+            "class": "Part"
+          }
+        },
+        "restoredOriginalBaseline": true
+      },
+      "raw_result_sha256": "827bad6029e7604e3ee0500522d73c3b06ba36301e1c595389097f5ae1cf2479"
+    },
+    {
+      "id": "68-final-start",
+      "result": {
+        "hud": "Find the gold shell; press E to collect.",
+        "shellVisible": true,
+        "hudFits": true,
+        "awards": 0,
+        "won": false,
+        "collected": false,
+        "last": "Restarted"
+      },
+      "raw_result_sha256": "77780f2894d73dad30d9c5881444f98b71b4a0e8c627c5ae14be7544da989902"
+    },
+    {
+      "id": "71-final-carry",
+      "result": {
+        "hud": "Carry the shell to the green boat; press E.",
+        "shellVisible": false,
+        "hudFits": true,
+        "awards": 0,
+        "won": false,
+        "collected": true,
+        "last": "Collected"
+      },
+      "raw_result_sha256": "2895bbb36e72a816418893534de3b154265428a1aa9436e3d19f2d07d732ea9d"
+    },
+    {
+      "id": "74-final-win",
+      "result": {
+        "hud": "You win! Restart and complete the loop again.",
+        "shellVisible": false,
+        "hudFits": true,
+        "awards": 1,
+        "won": true,
+        "collected": true,
+        "last": "Won"
+      },
+      "raw_result_sha256": "e8bb76ca98e02b92af1f98f76d05437b45d66b99159b6dd7b44d78a2cac75dd0"
+    },
+    {
+      "id": "77-final-reset",
+      "result": {
+        "hud": "Find the gold shell; press E to collect.",
+        "shellVisible": true,
+        "hudFits": true,
+        "awards": 0,
+        "won": false,
+        "collected": false,
+        "last": "Restarted"
+      },
+      "raw_result_sha256": "77780f2894d73dad30d9c5881444f98b71b4a0e8c627c5ae14be7544da989902"
+    },
+    {
+      "id": "78-final-console",
+      "result": "[GameForgeSmoke] client ready r3\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\nContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type\n[GameForgeSmoke] collected\n[GameForgeSmoke] won\n[GameForgeSmoke] restarted",
+      "raw_result_sha256": "cbf87c25647ce2548f84bdca08eb40518ee6c7625db69de12f456b021fe3282e"
+    },
+    {
+      "id": "80-final-edit-state",
+      "result": "- Current Studio Mode: Edit\n- Available DataModels: Edit\n- Focused DataModel in the viewport: Edit",
+      "raw_result_sha256": "d9869b81b540e50634fc981fa3eac7b280d1b78cd9510788cbaa5420f18dc25b"
+    },
+    {
+      "id": "82-studio-version",
+      "result": {
+        "placeName": "Place1",
+        "running": false,
+        "engineVersion": "0.745.0.7451137",
+        "placeId": 0
+      },
+      "raw_result_sha256": "f9fefd9a81592b0fe8ddfd4ff81e765630a9d373b4b7e16d89ab76f5d4b5fec1"
+    }
+  ],
+  "actual_input_ledger": [
+    {
+      "id": "17-play-r2",
+      "tool": "start_stop_play",
+      "arguments": {
+        "is_start": true
+      },
+      "result": "Game Started"
+    },
+    {
+      "id": "24-walk-shell",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 0,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "25-collect-input",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "28-walk-boat",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 10,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "29-deposit-input",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "32-duplicate-input",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "37-keyboard-restart",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "R"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "39-second-shell",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 0,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "40-second-collect",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "42-second-boat",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 10,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "43-second-deposit",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "45-button-restart",
+      "tool": "user_mouse_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "mouseButtonClick",
+            "instance_path": "LocalPlayer.PlayerGui.GameForgeSmokeHUD.Restart",
+            "mouse_button": "left"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "47-recovery-walk-shell",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 0,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "48-recovery-collect",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "50-reset-menu",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "Escape"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "53-avatar-reset-input",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "R"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          },
+          {
+            "action": "keyPress",
+            "key_code": "Return"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 7000
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "55-recovery-walk-shell",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 0,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "56-recovery-interact-shell",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "57-recovery-walk-boat",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 10,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "58-recovery-interact-boat",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 400
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "61-stop-rebuild",
+      "tool": "start_stop_play",
+      "arguments": {
+        "is_start": false
+      },
+      "result": "Game Stopped"
+    },
+    {
+      "id": "66-final-play",
+      "tool": "start_stop_play",
+      "arguments": {
+        "is_start": true
+      },
+      "result": "Game Started"
+    },
+    {
+      "id": "69-final-walk-shell",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 0,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "70-final-collect",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "72-final-walk-boat",
+      "tool": "character_navigation",
+      "arguments": {
+        "datamodel_type": "Client",
+        "x": 10,
+        "y": 3,
+        "z": 4,
+        "speed_multiplier": 1
+      },
+      "result": "Success"
+    },
+    {
+      "id": "73-final-deposit",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "E"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "76-final-restart",
+      "tool": "user_keyboard_input",
+      "arguments": {
+        "datamodel_type": "Client",
+        "actions": [
+          {
+            "action": "keyPress",
+            "key_code": "R"
+          },
+          {
+            "action": "wait",
+            "wait_time_ms": 500
+          }
+        ]
+      },
+      "result": "Success"
+    },
+    {
+      "id": "79-final-stop",
+      "tool": "start_stop_play",
+      "arguments": {
+        "is_start": false
+      },
+      "result": "Game Stopped"
+    }
+  ],
+  "inspected_viewport_images": [
+    {
+      "name": "09-start-view-0.jpg",
+      "sha256": "83cfd84a26b83553594a6ecf4a78ab74280189bd141b0ad906a0fa7eac8d7658",
+      "reviewed": true,
+      "publication": "private original retained; pixels not included in repository"
+    },
+    {
+      "name": "27-collect-view-0.jpg",
+      "sha256": "edd81c9f4bfd9381d50fb4500143226cf4efb6a35a8ffbe0b98236340d36c7f9",
+      "reviewed": true,
+      "publication": "private original retained; pixels not included in repository"
+    },
+    {
+      "name": "31-win-view-0.jpg",
+      "sha256": "d70b3b57e876494e18c95f45f0e63190283e66ff91507894026113552a1b73c5",
+      "reviewed": true,
+      "publication": "private original retained; pixels not included in repository"
+    },
+    {
+      "name": "36-fixed-win-view-0.jpg",
+      "sha256": "305629ed8a7b9e76acfcc98c8dbcfc9a00e8dc036adbc8fc1628056ce281a7ab",
+      "reviewed": true,
+      "publication": "private original retained; pixels not included in repository"
+    },
+    {
+      "name": "51-reset-menu-view-0.jpg",
+      "sha256": "3bb1e4e7d745fce635fef7d72c897a87515ae098a18cb17b41ac9454c292b3ed",
+      "reviewed": true,
+      "publication": "private original retained; pixels not included in repository"
+    },
+    {
+      "name": "75-final-win-view-0.jpg",
+      "sha256": "5b0f2aca1e6084479c7d10323979cdb5ced9c4c95e44e29be668cccf30887f86",
+      "reviewed": true,
+      "publication": "private original retained; pixels not included in repository"
+    }
+  ],
+  "known_warnings": [
+    "Three asset-type mismatch warnings for rbxassetid://203785492 remain. Fixture has no external assets; warning cause not established."
+  ],
+  "unrun": [
+    "different-place reconstruction",
+    "saved .rbxl reopen",
+    "multiplayer",
+    "touch/controller",
+    "cloud persistence",
+    "asset import",
+    "measured performance"
+  ],
+  "final_studio_mode": "Edit",
+  "game_published": false
+}

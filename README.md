@@ -44,7 +44,7 @@ Global skill installation supplies instructions; Studio connectivity is a separa
 
 Live prototyping needs inspection, instance/Luau editing, play start/stop, player input, runtime output, viewport observation, and a supported save/reproduction route. Tool schemas and feature availability can change. Read the [setup reference](skills/roblox-game-forge/references/studio-setup.md) for checks and troubleshooting. No Studio binary, account credentials, auto-installer for MCP, or publishing authority is bundled.
 
-For a bounded read-only connection check, run `python3 scripts/probe_studio.py` on the Studio computer. It reports configuration-independent MCP initialization and exposed capability names; zero/partial tools return a nonzero exit status. Even a full tool list leaves intended-place and gameplay verification pending. See [the current live-test attempt](docs/live-test-2026-10-27.md) and [the disposable shell-room fixture](examples/shell-room/README.md). The fixture is source prepared and explicitly remains unrun until the live gate passes.
+For a bounded read-only connection check, run `python3 scripts/probe_studio.py` on the Studio computer. It reports configuration-independent MCP initialization and exposed capability names; zero/partial tools return a nonzero exit status. Even a full tool list leaves intended-place and gameplay verification pending. The [2026-10-27 live test](docs/live-test-2026-10-27.md) subsequently verified the [disposable shell-room fixture](examples/shell-room/README.md) using actual walking, interaction, restart, avatar reset, and clean-baseline reconstruction.
 
 ## Capability and verification status
 
@@ -53,9 +53,10 @@ For a bounded read-only connection check, run `python3 scripts/probe_studio.py` 
 | Global local installation/discovery | User-level skill installation across projects | All 13 installed files matched published source; native Codex listing returned enabled user scope in two directories |
 | Adaptive interview, complete-brief shortcut, corrections, resume | An explicit workflow, examples, and durable templates | Actual model-response trials across 11 scenario cards, plus 3 targeted reruns; small, non-blind sample |
 | Requirements, asset provenance, source/test traceability | Four project templates and focused references | Independently inspected; structural checks and negative fixture tests |
-| Studio editing and playable prototyping | Tool-driven implementation instructions conditional on a verified live connection | Not yet end-to-end validated; current probe details in [validation status](docs/validation.md) |
-| Actual gameplay, failure/restart, multiplayer, touch, persistence and performance | Conditional acceptance procedures matched to each brief | Live checks remain unrun; no source-only or model-trial output is presented as a working prototype |
-| Save/reopen and reproducible delivery | Explicit verification rules and handoff records | Requires the selected host's supported save/export/sync route and actual readback/reconstruction |
+| Studio editing and playable prototyping | Tool-driven implementation conditional on a verified live connection | One actual PC/session prototype built, read back, playtested and repaired through official StudioMCP |
+| Actual gameplay and failure/restart | Conditional acceptance procedures matched to each brief | Collect/deposit/win/repeat, early/duplicate rejection, R/button restart and avatar-reset recovery passed in the tiny fixture |
+| Multiplayer, touch, persistence and performance | Brief-dependent checks | Unrun; the solo desktop result does not establish these branches |
+| Save/reopen and reproducible delivery | Explicit verification rules and handoff records | Final source reconstructed from the restored blank baseline and retested in the same instance; separate-place reconstruction and saved-file reopening unrun |
 | External assets, Higgsfield, Rojo and Git | Optional verified tools, never mandatory dependencies | No asset generation/import round-trip or paid service is required or claimed tested |
 
 This is an instruction skill, not a standalone game generator or a guarantee of subjective fidelity. With missing Studio capabilities, it prepares useful design/source and an exact handoff, and labels unexecuted work honestly. Paid purchases, unrelated destructive edits, asset uploads, and game publishing require their own applicable authority.

@@ -1,4 +1,4 @@
-# Roblox Game Forge 0.1.1
+# Roblox Game Forge 0.1.2
 
 A reusable Codex skill for a focused design interview, an actual Studio prototype when connected, and evidence-based iteration. Accepts one-line ideas, detailed briefs, references, existing source, and saved workflow projects. No full game was developed to create this skill.
 
@@ -28,6 +28,6 @@ Try:
 
 The packaged [validation summary](validation.md) records outcomes, evidence limits, and the remaining live Studio procedure. The public repository also contains a standalone validator, fixture tests, and CI checks. Raw model outputs and private checkpoint state are excluded. Examples inside this skill are illustrative.
 
-Test host: Codex desktop on macOS, 2026-10-26 America/Denver; offline checks ran with Python 3.15.0 and were rerun with `/usr/bin/python3` 3.9.6, also used by checkpointing. Studio MCP tools were not exposed. No live Studio editing, playtesting, asset import, native skill installation/discovery, or real device test is claimed. Exact inherited model/version/effort is not exposed to the agents and remains unverified.
+Test host: Codex desktop on macOS. The initial 2026-10-26 checks used Python 3.15.0 and 3.9.6. On 2026-10-27 the official StudioMCP tools connected to Studio 0.745.0.7451137; one solo PC/session fixture passed actual collect/deposit/win/repeat, early/duplicate rejection, R/button restart and avatar-reset recovery. Replication and HUD clipping defects were fixed, and final persistent source was reconstructed from the restored blank baseline in the same instance and replayed. See the [public live report](https://github.com/HarryBurd33/roblox-game-forge/blob/main/docs/live-test-2026-10-27.md).
 
-Before relying on live execution, run the small remaining Studio procedure in the delivered validation report. Prototype completion must include the actual core loop, failure/restart, relevant conditional checks, and verified saving/reproduction. The skill does not guarantee subjective perfection, commercial outcomes, or access to any third-party service.
+Saved-file reopening, a distinct new place, multiplayer, touch/controller, cloud persistence, external asset import and measured performance remain unrun. Exact inherited model/version/effort remains unverified. Run checks relevant to each new brief and host; this small result does not guarantee every conditional capability. The skill does not guarantee subjective perfection, commercial outcomes, or access to any third-party service.

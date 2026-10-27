@@ -1,9 +1,9 @@
 # Fixture continuation
 
-Source prepared: [setup.luau](../setup.luau), [brief](brief.md), [assets](assets.csv), and [evidence log](playtests.md). No saved Studio project is available and no working prototype is claimed.
+Status: live playtested and reconstructed from the restored original blank baseline, 2026-10-27. [Source](../setup.luau), [brief](brief.md), [assets](assets.csv), [playtests](playtests.md) and [full report](../../../docs/live-test-2026-10-27.md) describe the final r3 fixture.
 
-Next action: open a disposable blank Baseplate, enable the official built-in MCP through Assistant's settings, and connect the selected host. Check actual tool schemas and harmlessly list/read the intended place before any edit. Codex-side registration is separate from Studio-side enablement.
+Studio was left open in Edit mode with the final fixture and original Baseplate/SpawnLocation intact. The unsaved Place1 had placeId 0. The final script sources matched the builder after Stop. No `.rbxl` save/reopen or distinct-new-place reconstruction was tested. Raw target identity and logs are private; rediscover the actual current instance before editing.
 
-Then save a recoverable baseline, execute/read back the builder in Edit context, run [T-01 through T-08](../README.md) using actual player input, inspect runtime/viewport evidence, repair/retest, and verify local save/reopen or fresh reconstruction. Replace this handoff's missing identity/artifact fields only with actual observations.
+Next optional refinement: get player feedback about the tiny collect/deposit loop, then choose the next brief-defined feature. To repeat on another blank place, inspect/verify it, execute the builder in Edit, read back, and follow T-01 through T-08. The builder refuses existing owned names; inspect before replacing. Use the normal Studio local save workflow if a binary place file is desired and verify reopening separately.
 
-Preserve PC/session-only/one-player scope, original placeholders and no purchases/publication. No settled question needs repeating. The current unknown is operational readiness, not the game design. If a prior setup attempt left owned fixture names, inspect them before replacing anything; the builder deliberately refuses blind overwrite.
+Preserve solo PC/session scope, original placeholders and no purchases/publication. Multiplayer, mobile, persistence, external asset import and measured performance require separate tests. No settled design question needs repeating. An agent wrapper may reuse this skill later, but cannot replace a working Studio tool connection.

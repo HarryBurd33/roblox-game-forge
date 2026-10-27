@@ -1,6 +1,6 @@
 # Validation summary
 
-Checked 2026-10-26 America/Denver, version 0.1.1. This is an original instruction/resource package, not a game. No full game or paid asset was created. Version 0.1.1 adds public distribution and global installation instructions; the original workflow evidence remains scoped as below.
+Checked 2026-10-27 America/Denver, version 0.1.2. This is an original instruction/resource package, not a game. No full game or paid asset was created. Version 0.1.2 adds lessons from actual Studio playtesting; the original workflow evidence remains scoped as below.
 
 ## Evidence actually obtained
 
@@ -15,9 +15,13 @@ The frozen scenarios include cozy island interviewing, a complete ten-stage mobi
 
 Static checks establish structure, not behavior. Model trials establish actual responses to fixed scenario cards, not executed Studio actions. Both arms share one separate executor context, baseline first, so carryover is possible. Evaluation was small and non-blind; cases labeled heldout were known to the author and are reserved assessment cases, not blind held-out evidence. Exact inherited model/version/effort is unverified. There is no causal performance, cost-saving, or statistical superiority claim. Authored examples are illustrations only.
 
-Host: Codex desktop on macOS. Initial offline validation used Python 3.15.0; both offline validators also passed with `/usr/bin/python3` 3.9.6. No Studio MCP tools were exposed. Live place editing, gameplay, actual multiplayer, save/reopen, native installation/discovery, asset import, cloud persistence, and real device performance remain **unrun**.
+Host: Codex desktop on macOS. Initial offline validation used Python 3.15.0; offline validators also passed with Python 3.9.6. Later global installation/discovery was verified in two unrelated local directories.
 
-## Concrete remaining Studio procedure
+On 2026-10-27, Studio engine 0.745.0.7451137 and the official StudioMCP stdio tools were used to implement/read back a tiny original shell-room fixture. Actual walking and E interactions passed collection, deposit, win and repeat; early/duplicate deposits were rejected. R/button restart and normal avatar-reset recovery passed. A replication race and clipped HUD text were repaired. Final source was reconstructed after restoring the original blank baseline in the same instance, replayed and verified against persistent Edit sources after Stop. No game was published. The [public live report and evidence](https://github.com/HarryBurd33/roblox-game-forge/blob/main/docs/live-test-2026-10-27.md) separate observed results from the earlier zero-tool failure.
+
+A distinct new place, saved-file reopening, multiplayer, touch/controller, asset import, cloud persistence and measured performance remain unrun. Three nonfixture asset-type warnings remained. This bounded solo test does not establish every conditional branch.
+
+## Follow-up procedure for other hosts/features
 
 1. Manually install this whole folder into a disposable project's `.agents/skills/`; verify native discovery and activation/exclusions. Connect the intended local Studio place using the current [official MCP guide](https://create.roblox.com/docs/studio/mcp), discover real tool schemas, and verify identity with harmless reads.
 2. Supply the sufficient tiny brief: one room, one shell, boat deposit, visible win, restart, PC only, session only, no purchases, original primitive placeholders. Preserve a recoverable baseline. Check that the skill proceeds without repeating settled design questions and records requirement/test/source links.

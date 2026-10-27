@@ -1,6 +1,6 @@
 # Validation status
 
-Version 0.1.1. Checked 2026-10-26 America/Denver. This page distinguishes observed evidence from conditional instructions. It does not certify that every Studio runtime feature works in every host.
+Version 0.1.2. Checked 2026-10-27 America/Denver. This page distinguishes observed evidence from conditional instructions. It does not certify that every Studio runtime feature works in every host.
 
 ## Observed evidence
 
@@ -17,15 +17,17 @@ The public repository is recognized by GitHub as MIT licensed and public, with 1
 
 The official Skill Installer installed all 13 skill files from immutable source revision `d2ae28298cc3a8ce42dda72488dbcec171ca31f7`. Each installed file's SHA256 matched the reviewed public source. A real local Codex 0.164.0 app-server `skills/list` request with forced reload reported `roblox-game-forge` enabled with **user** scope from two unrelated working directories, with no skill-loading errors. This was a read-only discovery probe and started no model turn. It establishes local global installation/discovery; it does not establish native behavior on another device or working Studio tools.
 
-## Live connection probe and remaining limits
+After the live test, the existing unmodified global copy was updated to version 0.1.2. All 13 files matched the current canonical/public skill source, and the new ZIP's entries matched those source bytes. This update did not repeat the earlier native discovery probe.
 
-The [2026-10-27 live-test attempt](live-test-2026-10-27.md) records the latest actual setup and blockers. Codex-side registration is now completed; Studio-side tool exposure and the actual prototype loop remain unverified. The repository includes a read-only capability probe, eleven synthetic protocol tests, and an original source-prepared one-shell fixture with project records. These additions do not convert the failed connection attempt into a gameplay pass.
+## Live Studio result and remaining limits
 
-Roblox Studio 0.734.0.7340915 was present on the validation Mac. The official bundled `StudioMCP` process answered a real stdio MCP initialize request, identifying itself as RobloxStudio 1.0.0. A tool-list request returned **zero tools**, including on an unsandboxed local connection probe. Therefore no selected place, editing/input/output capability, or live playable prototype was established. The native UI inspection also timed out. No unrelated place was edited, no runtime test was claimed, and no game was published.
+The [2026-10-27 live report](live-test-2026-10-27.md) preserves the initial failed connection attempt and the successful continuation. After the user enabled Studio as MCP server through Assistant, the official stdio server exposed 28 tools. The intended original blank Baseplate was listed and inspected. A tiny original shell-room fixture was implemented, read back, and played using actual supported walking, keyboard and GUI input.
 
-Setup must expose the intended place's real tools before live features can be exercised. Skill installation alone does not enable that bridge. The [official setup guide](https://create.roblox.com/docs/studio/mcp) and [skill setup reference](../skills/roblox-game-forge/references/studio-setup.md) give the required steps.
+Collection/deposit/win/repeat, early and duplicate deposit rejection, R and button restart, and normal avatar-reset recovery passed. A real replication race and clipped longer HUD messages were repaired and retested. Final source was reconstructed after restoring the original blank baseline in the same instance, a short normal win/restart loop passed again, and persistent Edit sources matched after Stop. See [the tool-derived evidence receipt](evidence/studio-live-2026-10-27.json). The owned test client closed; no game was published.
 
-No actual gameplay, real two-client/device test, cloud persistence save/rejoin, asset import, saved-place reopen, or performance measurement has passed here. Emulation, mock stores, script inspection, screenshots alone, and directly setting a win variable cannot substitute for those observations.
+This run used Codex desktop/macOS and Studio engine 0.745.0.7451137, through official StudioMCP stdio tools. Three nonfixture asset-type warnings remained; a clean console is not claimed. The repository's 30 offline tests remain package/protocol checks, distinct from this actual gameplay evidence.
+
+A distinct-new-place reconstruction, saved `.rbxl` reopen, two-client/device checks, cloud persistence round trip, asset import and measured performance remain unrun. The successful solo loop does not qualify these conditional branches. Skill installation alone still does not enable the Studio bridge; use the [official setup guide](https://create.roblox.com/docs/studio/mcp) and [setup reference](../skills/roblox-game-forge/references/studio-setup.md).
 
 ## Evidence limits
 
@@ -33,7 +35,7 @@ The model comparisons used one separate executor context, baseline first; carryo
 
 The initial source package was validated before public documentation changes. Public structural/fixture checks and installed/remote file comparison validate the distributed version separately. Only completed observations are reported as such; a procedure is not a passed test.
 
-## Remaining tiny live test
+## Broader follow-up procedure
 
 1. Install the skill into a disposable project and verify native discovery. Check a Unity build request, account-support request, and narrow Vector3 question do not start the game workflow.
 2. Connect a disposable local Studio place through the built-in server. Discover actual schemas, list/read identities harmlessly, and verify the intended target. If two open places share a name, resolve the target before any mutation.
@@ -42,4 +44,4 @@ The initial source package was validated before public documentation changes. Pu
 5. Stop play, verify durable Edit changes, save/reopen locally or reconstruct from editable source in a fresh place, and repeat a short success/restart check. Give focused movement feedback; verify brief/source/checks change together.
 6. Resume from saved records in a fresh context. Verify actual files and current connection, retain settled answers, and continue the next defined check. Use separate tiny tests for two-client authority/disconnect, touch/UI, isolated persistence success/failure/rejoin, and measured performance when those branches are required.
 
-Record host/Studio versions, actual tool capability, target identity, build revision, inputs, expected/observed results, errors, inspected visual evidence, and save/reopen evidence. Mark unsupported or unrun checks explicitly. A verified playable prototype can only be claimed after its actual core loop and relevant recovery paths are observed.
+The core tiny loop above has now run; use this broader procedure for new hosts/features. Record host/Studio versions, actual tool capability, target identity, build revision, inputs, expected/observed results, errors, inspected visual evidence, and save/reopen evidence. Mark unsupported or unrun checks explicitly. A verified playable prototype can only be claimed after its actual core loop and relevant recovery paths are observed.

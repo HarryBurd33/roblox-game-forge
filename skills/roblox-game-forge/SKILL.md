@@ -3,7 +3,7 @@ name: roblox-game-forge
 description: Turn Roblox game ideas or design briefs into playable Roblox Studio prototypes, then refine them through design feedback and actual playtesting. Use for designing and building a Roblox game, implementing a brief in Studio, or continuing a project made through this workflow. Skip other engines, playing Roblox, account support, and narrow Roblox questions answerable directly. A complete brief goes straight to material gaps and implementation.
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
 ---
 
 # Roblox Game Forge

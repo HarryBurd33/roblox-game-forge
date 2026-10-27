@@ -1,4 +1,4 @@
--- Original disposable Studio fixture. NOT yet live-tested; see README.md.
+-- Original disposable Studio fixture. Live-test evidence and limits: README.md.
 -- Execute in the verified disposable place's Edit context. Creates only owned names.
 local RunService = game:GetService("RunService")
 assert(RunService:IsStudio() and not RunService:IsRunning(), "Run in Studio Edit mode")
@@ -56,6 +56,7 @@ local function near(player, target)
     return body and humanoid and humanoid.Health > 0 and (body.Position - target.Position).Magnitude <= 12
 end
 local function joined(player)
+    player.RespawnLocation = root.Spawn
     reset(player)
     player.CharacterAdded:Connect(function() reset(player) end)
 end
@@ -98,23 +99,25 @@ client.Name = "GameForgeSmokeClient"
 client.Source = [==[
 local player = game:GetService("Players").LocalPlayer
 local root = workspace:WaitForChild("GameForgeSmoke")
+local shell = root:WaitForChild("Shell")
+local shellPrompt = shell:WaitForChild("ProximityPrompt")
 local restart = game:GetService("ReplicatedStorage"):WaitForChild("GameForgeSmokeRestart")
 local gui = Instance.new("ScreenGui")
 gui.Name, gui.ResetOnSpawn = "GameForgeSmokeHUD", false
 local text = Instance.new("TextLabel")
-text.Name, text.Size, text.Position = "Status", UDim2.new(0, 500, 0, 65), UDim2.new(.5, -250, 0, 25)
+text.Name, text.Size, text.Position = "Status", UDim2.new(0, 500, 0, 100), UDim2.new(.5, -250, 0, 25)
 text.TextSize, text.TextWrapped = 22, true
 text.BackgroundColor3, text.TextColor3 = Color3.fromRGB(20, 30, 40), Color3.new(1, 1, 1)
 text.Parent = gui
 local button = Instance.new("TextButton")
-button.Name, button.Size, button.Position = "Restart", UDim2.new(0, 160, 0, 45), UDim2.new(.5, -80, 0, 100)
+button.Name, button.Size, button.Position = "Restart", UDim2.new(0, 160, 0, 45), UDim2.new(.5, -80, 0, 140)
 button.Text, button.TextSize, button.Parent = "Restart (R)", 20, gui
 gui.Parent = player:WaitForChild("PlayerGui")
 local function update()
     local collected, won = player:GetAttribute("ForgeCollected"), player:GetAttribute("ForgeWon")
     text.Text = won and "You win! Restart and complete the loop again." or collected and "Carry the shell to the green boat; press E." or "Find the gold shell; press E to collect."
-    root.Shell.LocalTransparencyModifier = collected and 1 or 0
-    root.Shell.ProximityPrompt.Enabled = not collected
+    shell.LocalTransparencyModifier = collected and 1 or 0
+    shellPrompt.Enabled = not collected
 end
 player:GetAttributeChangedSignal("ForgeCollected"):Connect(update)
 player:GetAttributeChangedSignal("ForgeWon"):Connect(update)
@@ -123,7 +126,8 @@ game:GetService("UserInputService").InputBegan:Connect(function(input, processed
     if not processed and input.KeyCode == Enum.KeyCode.R then restart:FireServer("restart") end
 end)
 update()
+print("[GameForgeSmoke] client ready r3")
 ]==]
 client.Parent = SPS
-print("[GameForgeSmoke] fixture prepared in Edit mode; gameplay has not been tested")
+print("[GameForgeSmoke] installed in Edit mode; run the input-driven checklist for this installation")
 return {root = root:GetFullName(), server = server:GetFullName(), client = client:GetFullName()}
