@@ -48,6 +48,7 @@ Live prototyping needs inspection, instance/Luau editing, play start/stop, playe
 
 | Capability | What this skill provides | Evidence/status |
 | --- | --- | --- |
+| Global local installation/discovery | User-level skill installation across projects | All 13 installed files matched published source; native Codex listing returned enabled user scope in two directories |
 | Adaptive interview, complete-brief shortcut, corrections, resume | An explicit workflow, examples, and durable templates | Actual model-response trials across 11 scenario cards, plus 3 targeted reruns; small, non-blind sample |
 | Requirements, asset provenance, source/test traceability | Four project templates and focused references | Independently inspected; structural checks and negative fixture tests |
 | Studio editing and playable prototyping | Tool-driven implementation instructions conditional on a verified live connection | Not yet end-to-end validated; current probe details in [validation status](docs/validation.md) |

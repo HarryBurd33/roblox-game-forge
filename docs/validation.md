@@ -11,6 +11,12 @@ Version 0.1.1. Checked 2026-10-26 America/Denver. This page distinguishes observ
 
 The 11 cases cover vague interviewing, a complete ten-stage mobile/no-monetization obby, speed/cooperation revision, missing integration, three activation exclusions, saved-record resume, ambiguous places, source-only completion/publishing, and a conditional full-loop test plan.
 
+## Distribution checks
+
+The public repository is recognized by GitHub as MIT licensed and public, with 11 relevant Roblox/Codex/Luau/design/MCP topics. [The first GitHub Actions run](https://github.com/HarryBurd33/roblox-game-forge/actions/runs/40454038481) passed the package validator and all 19 fixture tests on Python 3.11 and 3.13. Local checks also passed on Python 3.9.6.
+
+The official Skill Installer installed all 13 skill files from immutable source revision `d2ae28298cc3a8ce42dda72488dbcec171ca31f7`. Each installed file's SHA256 matched the reviewed public source. A real local Codex 0.164.0 app-server `skills/list` request with forced reload reported `roblox-game-forge` enabled with **user** scope from two unrelated working directories, with no skill-loading errors. This was a read-only discovery probe and started no model turn. It establishes local global installation/discovery; it does not establish native behavior on another device or working Studio tools.
+
 ## Live connection probe and remaining limits
 
 Roblox Studio 0.734.0.7340915 was present on the validation Mac. The official bundled `StudioMCP` process answered a real stdio MCP initialize request, identifying itself as RobloxStudio 1.0.0. A tool-list request returned **zero tools**, including on an unsandboxed local connection probe. Therefore no selected place, editing/input/output capability, or live playable prototype was established. The native UI inspection also timed out. No unrelated place was edited, no runtime test was claimed, and no game was published.
