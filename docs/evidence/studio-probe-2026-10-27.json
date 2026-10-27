@@ -1,0 +1,32 @@
+{
+  "capabilities": {
+    "editing": false,
+    "inspection": false,
+    "play_control": false,
+    "player_input": false,
+    "runtime_output": false,
+    "target_listing": false,
+    "viewport": false
+  },
+  "gameplay_verified": false,
+  "initialized": true,
+  "missing_capabilities": [
+    "target_listing",
+    "inspection",
+    "editing",
+    "play_control",
+    "runtime_output",
+    "viewport",
+    "player_input"
+  ],
+  "place_identity_verified": false,
+  "protocol_version": "2024-11-05",
+  "scope": "Read-only initialize and tools/list; no model turn or place action.",
+  "server": {
+    "name": "RobloxStudio",
+    "version": "1.0.0"
+  },
+  "status": "initialized_no_tools",
+  "tool_count": 0,
+  "tools": []
+}

@@ -44,6 +44,8 @@ Global skill installation supplies instructions; Studio connectivity is a separa
 
 Live prototyping needs inspection, instance/Luau editing, play start/stop, player input, runtime output, viewport observation, and a supported save/reproduction route. Tool schemas and feature availability can change. Read the [setup reference](skills/roblox-game-forge/references/studio-setup.md) for checks and troubleshooting. No Studio binary, account credentials, auto-installer for MCP, or publishing authority is bundled.
 
+For a bounded read-only connection check, run `python3 scripts/probe_studio.py` on the Studio computer. It reports configuration-independent MCP initialization and exposed capability names; zero/partial tools return a nonzero exit status. Even a full tool list leaves intended-place and gameplay verification pending. See [the current live-test attempt](docs/live-test-2026-10-27.md) and [the disposable shell-room fixture](examples/shell-room/README.md). The fixture is source prepared and explicitly remains unrun until the live gate passes.
+
 ## Capability and verification status
 
 | Capability | What this skill provides | Evidence/status |

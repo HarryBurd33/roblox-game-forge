@@ -19,6 +19,8 @@ The official Skill Installer installed all 13 skill files from immutable source 
 
 ## Live connection probe and remaining limits
 
+The [2026-10-27 live-test attempt](live-test-2026-10-27.md) records the latest actual setup and blockers. Codex-side registration is now completed; Studio-side tool exposure and the actual prototype loop remain unverified. The repository includes a read-only capability probe, eleven synthetic protocol tests, and an original source-prepared one-shell fixture with project records. These additions do not convert the failed connection attempt into a gameplay pass.
+
 Roblox Studio 0.734.0.7340915 was present on the validation Mac. The official bundled `StudioMCP` process answered a real stdio MCP initialize request, identifying itself as RobloxStudio 1.0.0. A tool-list request returned **zero tools**, including on an unsandboxed local connection probe. Therefore no selected place, editing/input/output capability, or live playable prototype was established. The native UI inspection also timed out. No unrelated place was edited, no runtime test was claimed, and no game was published.
 
 Setup must expose the intended place's real tools before live features can be exercised. Skill installation alone does not enable that bridge. The [official setup guide](https://create.roblox.com/docs/studio/mcp) and [skill setup reference](../skills/roblox-game-forge/references/studio-setup.md) give the required steps.
